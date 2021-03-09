@@ -1,0 +1,27 @@
+.status{
+    background-color:  transparent;
+    border: none;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.status::placeholder{
+    color: #939393;
+}
+
+.status:hover{
+    background-color: #f0f2f5;
+}
+
+.status:focus{
+    outline: none;
+}
+
+.statusText{
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}

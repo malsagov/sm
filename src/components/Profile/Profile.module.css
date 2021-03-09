@@ -1,0 +1,14 @@
+.pageBody{
+    display: flex;
+    justify-content: space-between;
+    width: 795px;
+}
+
+.left{
+    margin-right: 10px;
+    width: 295px;
+}
+
+.right{
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+.dialogs{
+    display: flex;
+    align-items: flex-start;
+}
+
+.items{
+    width: 400px;
+    height: 600px;
+    border-top: 1px solid #e7e8ec;
+    border-bottom: 1px solid #e7e8ec;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* .dialogsMenu{
+    width: 230px;
+    height: 100px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #d3d9de,0 0 0 1px #e7e8ec;
+} */
+
+
+
+
+
+

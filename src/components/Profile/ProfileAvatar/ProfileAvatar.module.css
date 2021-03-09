@@ -1,0 +1,10 @@
+.avatarWrap{
+    background-color: #fff;
+    border-radius: 4px; 
+    padding: 15px;
+}
+
+.avatar{
+    border-radius: 2px;
+    cursor: pointer;
+}

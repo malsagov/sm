@@ -1,0 +1,35 @@
+.profileInfo{
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.header{
+    padding: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e7e8ec;
+}
+
+.nameBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.online{
+    font-size: 12.5px;
+    color: #939393;
+    font-weight: 400;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
