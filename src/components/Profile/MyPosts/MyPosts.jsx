@@ -6,14 +6,7 @@ import {required} from '../../../utils/validators/validators'
 import {Textarea} from '../../common/FormsControls/FormsControls'
 
 const MyPosts = (props) => {
-  // const newPostElement = React.createRef()
-
-  // const onAddPost = () => {
-  //   const text = newPostElement.current.value
-  //   props.addPost(text)
-  //   newPostElement.current.value = ''
-  // }
-
+  
   let onAddPost = (values) => {
     props.addPost(values.newPostText)
   }
