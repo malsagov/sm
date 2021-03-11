@@ -2,6 +2,8 @@ import React from 'react'
 import s from './Messages.module.css'
 import Message from './Message/Message'
 import { Field, reduxForm } from 'redux-form'
+import {Input} from '../../common/FormsControls/FormsControls'
+import { required } from '../../../utils/validators/validators'
 
 
 
@@ -49,7 +51,8 @@ const Messages = (props) => {
 const AddMessageForm = (props) => {
   return (
     <form className={s.footer} onSubmit={props.handleSubmit}>
-      <Field component={'input'} name={'newMessageBody'} className={s.input} placeholder="Напишите сообщение..."/>
+      {/* В component заменить на input */}
+      <Field validate={[required]} component={Input} name={'newMessageBody'} className={s.input} placeholder="Напишите сообщение..."/>
       <button className={s.send}>Send</button>
     </form>
   )

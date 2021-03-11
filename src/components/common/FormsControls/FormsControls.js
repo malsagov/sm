@@ -1,11 +1,22 @@
 import React from 'react' 
 import s from './FormsControls.module.css'
 
-export const Textarea = (props) => {
+export const Textarea = ({input, meta, ...props}) => {
+    const hasError =  meta.touched && meta.error
     return (
-        <div className={`${s.wrap} ${s.error}`}>
-            <textarea {...props.input} {...props}></textarea>
-            <span>Some error</span>
+        <div className={`${s.wrap} ${hasError ? s.error : ''}`}>
+            <textarea {...input} {...props}></textarea>
+            { hasError && <span>{meta.error}</span>}
+        </div>
+    )
+}
+
+export const Input = ({input, meta, ...props}) => {
+    const hasError =  meta.touched && meta.error
+    return (
+        <div className={`${s.wrap} ${hasError ? s.error : ''}`}>
+            <input {...input} {...props} />
+            { hasError && <span>{meta.error}</span>}
         </div>
     )
 }
