@@ -12,7 +12,7 @@ const Profile = (props) => {
     return (
         <div className={s.pageBody}>
           <div className={s.left}>
-            <ProfileAvatar profile={props.profile} />
+            <ProfileAvatar isOwner={props.isOwner} savePhoto={props.savePhoto} profile={props.profile} />
           </div>
           <div className={s.right}>
             <ProfileInfo status={props.status} updateStatus={props.updateStatus}/>
