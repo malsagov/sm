@@ -17,6 +17,7 @@
     overflow: hidden;
     font-family: inherit;
     font-size: 13px;
+    width: 70%;
 }
 
 .field::placeholder{

@@ -28,8 +28,14 @@
     font-weight: 400;
 }
 
+.middle{
+    padding: 15px 15px
+
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    border-top: 1px solid #e7e8ec;
 }
