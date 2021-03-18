@@ -7,4 +7,51 @@
 .avatar{
     border-radius: 2px;
     cursor: pointer;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    outline: none;
+}
+
+.inputWrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.avatarInput{
+    display: none;
+}
+
+.avatarLabel{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.edit{
+    margin-top: 10px;
+    background-color: #e5ebf1;
+    color: #55677d;
+    padding: 7px 16px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    font-size: 12.5px;
+}
+
+.edit:hover{
+    opacity: 0.88;
+}
+
+.edit:active{
+    padding: 8px 16px 7px;
+}
+
+.edit:focus{
+    outline: none;
 }

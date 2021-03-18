@@ -7,10 +7,23 @@ const ProfileInfo = (props) => {
         <div className={s.profileInfo}>
             <div className={s.header}>
                 <div className={s.nameBlock}>
-                    <div className={s.name}>Руслан Мальсагов</div>
+                    <div className={s.name}>{props.profile.fullName}</div>
                     <div className={s.online}>online</div>
                 </div>
                 <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+            </div>
+            <div className={s.middle}>
+                <div>
+                    <b>Ищу работу:</b> {props.profile.lookingForAJob ? 'да' : 'нет'}
+                </div>
+                {   props.profile.lookingForAJob &&
+                    <div>
+                        <b>My professional skills:</b> {props.profile.lookingForAJobDescription}
+                    </div>
+                }
+                <div>
+                    <b>Обо мне:</b> {props.profile.aboutMe}
+                </div>
             </div>
             <div className={s.footer}>
                 Друзей: 400
@@ -18,5 +31,7 @@ const ProfileInfo = (props) => {
         </div>
     )
 }
+
+
 
 export default ProfileInfo

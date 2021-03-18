@@ -13,8 +13,9 @@ const ProfileAvatar = (props) => {
         <div className={s.avatarWrap}>
             <div className={s.avatarSettings}>
               <img className={s.avatar} src={props.profile.photos.large || 'https://vk.com/images/camera_200.png'} />
-              { props.isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
+              { props.isOwner && <div className={s.inputWrap}><input id={'avatar'} className={s.avatarInput} type={'file'} onChange={onMainPhotoSelected}  /> <label className={s.avatarLabel} htmlFor={'avatar'}>Обновить фотографию</label></div> }
             </div>
+            { props.isOwner && <button className={s.edit}onClick={props.toEditMode}>Редактировать</button> }
         </div>
     )
   }
